@@ -1,0 +1,49 @@
+.home-section {
+  height: 900px;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Fondos específicos */
+.system-engineer {
+  background-image: url("/src/assets/images/pru.jpg");
+}
+
+.technical-electronican {
+  background-image: url("/src/assets/images/fondo2.jpg");
+}
+
+/* Fondos extendidos */
+.system-engineer.expanded {
+  background-image: url("/src/assets/images/sytemas.jpg");
+}
+
+.technical-electronican.expanded {
+  background-image: url("/src/assets/images/soporte_tecnico1.png");
+}
+
+
+/* Capa con blur encima del fondo */
+.overlay-dark {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Estilo temporal para debugging */
+.debug-expanded {
+  background-color: yellow !important;
+  color: black !important;
+  border: 3px solid red !important;
+  z-index: 9999 !important;
+  position: relative !important;
+}
